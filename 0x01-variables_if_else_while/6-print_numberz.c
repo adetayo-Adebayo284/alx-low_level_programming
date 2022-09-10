@@ -10,11 +10,11 @@
 
 int main(void)
 {
-	char count = '0';
+	int count = 0;
 
-	while (count <= '9')
+	while (count <= 9)
 	{
-		putchar(count);
+		putchar('0' + count);
 		count++;
 	}
 	putchar('\n');
