@@ -13,7 +13,7 @@
 
 int main(void)
 {
-	char arr[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-1\n";
+	char arr[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 	int count = 0;
 
 	for (count = 0; arr[count] != '\0'; count++)
