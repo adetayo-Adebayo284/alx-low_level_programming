@@ -10,15 +10,14 @@
 
 int main(void)
 {
-	char count = 97;
+	char count = 'a';
 
-	for (count = 97; count <= 122; count++)
+	for (count = 'a' ; count <= 'z'; count++)
 	{
-		if (count == 113 || 101)
+		if (count != 'e' && count != 'q')
 		{
-			continue;
+			putchar(count);
 		}
-		putchar(count);
 	}
 	putchar('\n');
 	return (0);
