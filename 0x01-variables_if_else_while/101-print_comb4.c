@@ -10,21 +10,21 @@
 
 int main(void)
 {
-	int var1, var2, var3;
-	int varia;
+	int a, b, c;
+	int d;
 
-	for (var1 = 0; var1 < 100; var1++)
+	for (a = 0; a < 1000; a++)
 	{
-		var2 = var1 / 100; /*HUNDREDTH*/
-		var3 = (var1 / 10) % 10; /*TENTH*/
-		var1 = var1 % 10; /* SINGLE */
-		if (var2 < var3 && var3 < varia)
+		b = a / 100; /*HUNDREDTH*/
+		c = (a / 10) % 10; /*TENTH*/
+		a = a % 10; /* SINGLE */
+		if (b < c && c < d)
 		{
-			putchar(var2 + '0');
-			putchar(var3 + '0');
-			putchar(varia + '0');
+			putchar(b + '0');
+			putchar(c + '0');
+			putchar(d + '0');
 
-			if (var1 < 700)
+			if (a < 700)
 			{
 				putchar(44);
 				putchar(32);
