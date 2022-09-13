@@ -3,8 +3,7 @@
 /**
  * print_alphabet - Check description
  *
- * DESCRIPTION: Write a function that prints the lower alphabet
- * 10 times followed by a new line
+ *
  *
  * Return: Always Nothing.
  */
