@@ -1,19 +1,18 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_alphabet - Check description
  *
  * DESCRIPTION: Write a function that prints the lower alphabet,
  *
- * Return: Always 0.
+ * Return: Always Nothing.
  */
 void print_alphabet(void)
 {
 	char i;
 
 	for (i = 'a'; i <= 'z'; i++)
-	{
 		_putchar(i);
-	}
+
 	_putchar('\n');
 }
