@@ -1,14 +1,13 @@
-#include <unistd.h>
 #include "main.h"
 
 /**
  * main - check the code
  *
- * DESCRIPTION: Write a program that prints _putchar, followed by a new line.
+ * DESCRIPTION: Write a function that prints the alphabet, in lowercase, followed by a new line.
  *
  * Return: Always 0.
  */
-int main(void)
+void print_alphabet(void)
 {
 	char i;
 
