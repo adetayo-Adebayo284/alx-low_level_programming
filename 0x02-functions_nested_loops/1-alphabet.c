@@ -3,7 +3,7 @@
 /**
  * main - check the code
  *
- * DESCRIPTION: Write a function that prints the alphabet, in lowercase, followed by a new line.
+ * DESCRIPTION: Write a function that prints the lower alphabet,
  *
  * Return: Always 0.
  */
