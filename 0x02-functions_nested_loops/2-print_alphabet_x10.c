@@ -3,20 +3,21 @@
 /**
  * print_alphabet - Check description
  *
- * DESCRIPTION: Write a function that prints the lower alphabet 10 times,
+ * DESCRIPTION: Write a function that prints the lower alphabet
+ * 10 times followed by a new line
  *
  * Return: Always Nothing.
  */
-void print_alphabet_x10(void)
+void void print_alphabet_x10(void)
 {
-	int i;
-	char k;
+	char i;
+	int k = 0;
 
-	for (i = 0; i < 10; i++)
+	for (k = 0; k < 10; k++)
 	{
-		for (k = 'a'; k <= 'z'; k++)
-			_putchar(k);
-		_putchar('\n');
+		for (i = 'a'; i <= 'z'; i++)
+			_putchar(i);
 
+		_putchar('\n');
 	}
 }

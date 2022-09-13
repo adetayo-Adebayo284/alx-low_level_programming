@@ -3,7 +3,7 @@
 /**
  * main - check the code
  *
- * DESCRIPTION: Write a program that prints _putchar, followed by a new line.
+ * DESCRIPTION: Write a program that prints lower alpha 10 times, followed by a new line.
  *
  * Return: Always 0.
  */
