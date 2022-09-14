@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_sign - a function that computes the absolute value of an integer.
+ *_abs - a function that computes the absolute value of an integer.
  * @n: input character to the function
- * Returns: absolute value
+ * Return: absolute values
  */
 int _abs(int n)
 {
