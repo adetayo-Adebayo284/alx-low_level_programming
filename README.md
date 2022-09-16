@@ -1,1 +1,1 @@
-0x00. C - Hello, World Project directory
+0x03. C - Debugging
