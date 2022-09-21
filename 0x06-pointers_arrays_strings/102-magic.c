@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+/**
+ * main - Check code; Return: Nothing
+ */
 int main(void)
 {
 	int n;
