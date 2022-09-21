@@ -23,11 +23,8 @@ char *_strncpy(char *dest, char *src, int n)
 		n = strclen;
 	src = start;
 
-	while (i < n)
-	{
+	for (; i < n; i++)
 		*dest++ = *src++;
-		i++;
-	}
 
 	return (tmp);
 }
