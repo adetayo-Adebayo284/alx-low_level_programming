@@ -9,19 +9,19 @@
 char *rot13(char *str)
 {
 	int count = 0, i;
-	char letter[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char alp[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	for (count = 0; *(s + count) != '\0'; count++)
+	for (count = 0; *(str + count) != '\0'; count++)
 	{
 		for (i = 0; i < 52; i++)
 		{
-			if (*(s + count) == letter[i])
+			if (*(str + count) == alp[i])
 			{
-				*(s + count) = rot13[i];
+				*(str + count) = rot13[i];
 				break;
 			}
 		}
 	}
-	return (s);
+	return (str);
 }
