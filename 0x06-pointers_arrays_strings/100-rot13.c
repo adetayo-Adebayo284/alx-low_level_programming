@@ -8,9 +8,8 @@
 
 char *rot13(char *str)
 {
-	int i = 0;
+	int count = 0, i;
 	char letter[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int count = 0;
 	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	for (count = 0; *(s + count) != '\0'; count++)
@@ -24,4 +23,5 @@ char *rot13(char *str)
 			}
 		}
 	}
+	return (s);
 }
