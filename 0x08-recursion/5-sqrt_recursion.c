@@ -3,7 +3,7 @@
 /**
  * sqrt_ch - Checks for the square root of c
  * @g: Guess sqrt
- * @c: Number to find sqrt
+ * @n: Number to find sqrt
  * Return: -1 or sqrt of c
  */
 int sqrt_ch(int g, int n)
