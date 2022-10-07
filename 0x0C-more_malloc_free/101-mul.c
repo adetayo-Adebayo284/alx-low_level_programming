@@ -8,29 +8,22 @@
  * @argv: arguments
  * Return: 0 success
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv[])
 {
-	unsigned long mul;
-	int i, j;
+	int num1, num2, ans;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-
-	for (i = 1; i < argc; i++)
+	else
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
-		{
-			if (argv[i][j] > 57 || argv[i][j] < 48)
-			{
-				printf("Error\n");
-				exit(98);
-			}
-		}
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[2]);
+		ans = num1 * num2;
+		printf("%d\n", ans);
 	}
-	mul = atol(argv[1]) *  atol(argv[2]);
-	printf("%d\n", mul);
+
 	return (0);
 }
