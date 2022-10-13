@@ -9,9 +9,9 @@ void print_float(va_list *arg);
 void print_string(va_list *arg);
 
 /**
- * print_all - prints anything(any data type)
- * @format: pointer to string of data format types
- */
+* print_all - prints anything(any data type)
+* @format: pointer to string of data format types
+*/
 
 void print_all(const char * const format, ...)
 {
@@ -24,7 +24,7 @@ void print_all(const char * const format, ...)
 		{'f', print_float},
 		{'s', print_string},
 		{'\0', NULL}
-	}
+	};
 	void (*get_func_ptr)(va_list *);
 	va_list args;
 
@@ -46,12 +46,13 @@ void print_all(const char * const format, ...)
 }
 
 /**
- * get_func - gets corresponding function of format type
- * @fmt_arr: format types array
- * @identifier: format type
- * Return: pointer to function (SUCCESS) or
- * NULL (FAILURE)
- */
+* get_func - gets corresponding function of format type
+* @fmt_arr: format types array
+* @identifier: format type
+* Return: pointer to function (SUCCESS) or
+* NULL (FAILURE)
+*/
+
 void (*get_func(char identifier, struct format_struct *fmt_arr))(va_list *)
 {
 	int i = 0;
@@ -59,7 +60,9 @@ void (*get_func(char identifier, struct format_struct *fmt_arr))(va_list *)
 	while (fmt_arr[i].format)
 	{
 		if (fmt_arr[i].format == identifier)
+		{
 			return (fmt_arr[i].fmt_print_func);
+		}
 		i++;
 	}
 	return (fmt_arr[i].fmt_print_func);
